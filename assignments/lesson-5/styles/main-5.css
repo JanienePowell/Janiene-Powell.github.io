@@ -8,7 +8,7 @@ body {
 
   /* Declare the base font-family - from google font api or other */
 }
-header, nav, main, article, footer {
+header, nav, main, section, article, footer {
         max-width: 600px;
         margin: 0 auto;
         padding: 20px;
@@ -19,7 +19,6 @@ header, nav, main, article, footer {
 }
 
 header {
-     margin-bottom: 100px;
 
 }
 header h1 {font-family: 'volkhov', serif;
@@ -81,16 +80,18 @@ main h2 {
     text-align: center;
 }
 main figure {
-    margin: 0 0 2%; width:100%;
+    margin: 0 0 2%; width:96%;
 }
 main figure img {
     width: 100%;
-    height: ;
+
 }
 section {
-    display: none;
-    text-align: center
+    text-align: center;
+
 }
+table{display: none;}
+
 article {
     border-style: solid;
     border-width: 1px;
@@ -105,6 +106,7 @@ article p{
 }
 article p.town-article img {
     width: 98%;
+    margin: 1;
     float: inherit;
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     /* fill the page in the small/phone view */
