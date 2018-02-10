@@ -1,0 +1,129 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: 'exo', sans-serif;
+
+  /* Declare the base font-family - from google font api or other */
+}
+header, nav, main, article, footer {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;/* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+     margin-bottom: 100px;
+
+}
+header h1 {font-family: 'volkhov', serif;
+    color: black;
+    font-size: 40px;
+    text-shadow: 4px 4px 4px #aaa;
+    position: absolute;
+    margin-left: 100px;
+
+
+        }
+header img {
+    width: 130px;
+    height: auto;
+    float:  left;
+    margin: 10px;
+    padding-top: 40px;
+    position: relative;
+}
+header .subheading {
+    position: absolute;
+    color: #2255C1;
+    padding-top: 85px;
+    padding-left: 150px;
+}
+nav {
+    display: none;
+    font-family: 'exo', sans-serif;
+    font-size: 14px;
+}
+nav button {
+
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+}
+nav ul li.active a {
+    background-color: #FAD84E;
+}
+nav ul li a:hover {
+            background-color: #FAD84E;
+}
+main { font-size: 16px;
+  font-family: 'exo', sans-serif;
+}
+main h2 {
+    font-family: 'volkhov', serif;
+    color: black;
+    text-align: center;
+}
+main figure {
+    margin: 0 0 2%; width:100%;
+}
+main figure img {
+    width: 100%;
+    height: ;
+}
+section {
+    display: none;
+    text-align: center
+}
+article {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #97B2C2;
+}
+article h3{ font-family: 'volkhov', serif;
+    color: black;
+    text-align: center;
+}
+article p{
+    text-align: center;
+}
+article p.town-article img {
+    width: 98%;
+    float: inherit;
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    /* fill the page in the small/phone view */
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+footer aside {
+    display: block;
+    background-color: #97B2C2;
+
+}
+footer>p {
+    background-color: #97B2C2;
+
+
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
